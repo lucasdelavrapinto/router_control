@@ -7,7 +7,7 @@ Essa foi feita para automatizar o processo de configuração do meu roteador, ha
 Inicialmente, é recomendado criar um ambiente virtual no linux para o projeto:
 `python3 -m venv .venv && source .venv/bin/activate`
 
-Para rodar, basta executar o comando `python3 index.py` e aguardar.
+Para rodar, basta executar o comando `python3 index.py on` ou `python3 index.py off` e aguardar.
 
 # Como funciona
 
@@ -17,13 +17,16 @@ O script utiliza o Playwright para acessar a página de login do roteador e exec
 
 Instale com o pip:
 
-`python3 -m pip install requirements.txt`
+`python3 -m pip install -r requirements.txt`
 
 # CRON
 
 Para executar o script automaticamente, você pode usar o CRON, como exemplo:
 
 `59 23 * * * python3 index.py` que irá executar o script todos dias as 23:59.
+
+Para maiores informações sobre o CRON, consulte a documentação oficial: https://man7.org/linux
+Se precisar de auxilio para configurar o CRON, consulte: https://crontab.guru/.
 
 # Observações importantes
 

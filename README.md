@@ -36,3 +36,7 @@ Se precisar de auxilio para configurar o CRON, consulte: https://crontab.guru/.
 - O script foi testado com um modelo específico de roteador, então pode ser necessário ajustar os seletores de elementos para funcionar com outros modelos.
 - O script é assíncrono, então certifique-se de ter o ambiente configurado para rodar código assíncrono.
 - O script envia uma mensagem para o Telegram após a execução, então certifique-se de ter as credenciais do Telegram configuradas corretamente no arquivo `credentials.py`.
+
+# Adicionais
+
+- No script, o navegador é aberto em modo não headless para facilitar a depuração. Você pode alterar isso para `headless=True` para rodar sem abrir a janela do navegador.
